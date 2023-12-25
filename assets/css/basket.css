@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  .footer {
+    margin-top: auto;
+  }
+  
+
+.basketCount {
+    width: 12px;
+    background-color: red;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 14px;
+    right: 0px;
+  }
+  
+  
+  .container {
+    width: 100%;
+}
+  .pic {
+    position: relative;
+    width: 100%;
+  }
+  
+  .table {
+    margin-top: 72px;
+    border-collapse: collapse;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 100%;
+    display: none;
+  }
+  
+  .table thead tr {
+    background-color: rgb(207, 155, 216);
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 10px;
+    width: 25%;
+  }
+  
+  .table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(17, 6, 114);
+  }
+  
+  .table tbody tr.active-row {
+    font-weight: bold;
+    color: rgb(17, 6, 114);
+  }
+  
+  .table i {
+    color: rgb(17, 6, 114);
+  }
+  
+  #totalPrice {
+    padding: 16px 0;
+    border-bottom: 2px solid rgb(17, 6, 114);
+    display: block;
+    text-align: right;
+    /* margin-right: 5%; */
+    padding-right: 2%;
+    font-size: x-large;
+  }
+  #emptyBasketImage{
+    margin: 90px auto 0;
+    height: 300px;
+  }
+  
+  
+  
+  @media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+  
+    .table th,
+    .table td {
+        padding: 12px 8px;
+    }
+  
+    #totalPrice {
+        margin-right: 2%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 800px) {
+    .container {
+       margin: 10px 0;
+    }
+  
+    .cards {
+        flex-wrap: wrap;
+    }
+  
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+  
+    .table th,
+    .table td {
+        padding: 12px 8px;
+    }
+  
+    .table {
+        margin-top: 52px;
+    }
+  
+    .carousel-item {
+        height: 250px;
+    }
+  
+  }
+  
+  
