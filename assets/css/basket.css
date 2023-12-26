@@ -94,7 +94,7 @@ body {
   
   
   
-  @media screen and (max-width: 1200px) {
+  /* @media screen and (max-width: 1200px) {
     .container {
         width: 100%;
     }
@@ -108,9 +108,9 @@ body {
         margin-right: 2%;
     }
   
-  }
+  } */
   
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     .container {
        margin: 10px 0;
     }
@@ -132,11 +132,12 @@ body {
     .table {
         margin-top: 52px;
     }
+    
   
     .carousel-item {
         height: 250px;
     }
   
   }
-  
+   */
   

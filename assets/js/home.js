@@ -23,9 +23,15 @@ document.querySelector('#menu-btn').onclick = () =>{
 }
 
 window.onscroll = () =>{
-  login.classList.remove('active');
-  navbar.classList.remove('active');
-  cart.classList.remove('active');
+  if (cart) {
+    cart.classList.remove('active');
+}
+if (login) {
+    login.classList.remove('active');
+}
+if (navbar) {
+    navbar.classList.remove('active');
+}
 }
 
 
@@ -76,17 +82,6 @@ addToCartBtns.forEach(btn=>{
 
         localStorage.setItem("basket", JSON.stringify(arr));
         CalcBasketCount();
-
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            iconColor: 'rgb(17, 6, 114)',
-            title: 'Added to the basket!',
-            fontColor: 'rgb(17, 6, 114)', 
-            showConfirmButton: false,
-            timer: 1000,
-            width: '300px'
-          })
     })
 })
 
