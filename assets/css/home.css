@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-:root {
-    --primary-color:  rgb(175, 44, 175);
-    --secondary: #e9a93a;
-    --bg: #e2f9ee;
-    --black: #1c2137;
-    --white: #fff;
-    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-}
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -16,7 +8,6 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    text-transform: capitalize;
     text-decoration: none;
     transition: .2s linear;
 }
@@ -40,7 +31,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background:  rgb(121, 28, 121);
     border-radius: 5rem;
 }
 
@@ -52,7 +43,7 @@ section {
     text-align: center;
     padding: 1.2rem 0;
     margin-bottom: 3rem;
-    color: var(--primary-color);
+    color:  rgb(175, 44, 175);
     text-transform: uppercase;
     font-size: 4rem;
 }
@@ -67,19 +58,18 @@ section {
     display: inline-block;
     padding: 1.3rem 3.5rem;
     font-size: 1.7rem;
-    color: var(--white);
+    color: white;
     border-radius: .5rem;
-    background: var(--primary-color);
+    background: rgb(175, 44, 175);
     cursor: pointer;
 }
 
 .btn:hover {
-    color: var(--white);
-    background: var(--secondary);
-    box-shadow: var(--box-shadow);
+    color: white;
+    background: #e9a93a;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-/* header */
 
 .header {
     position: fixed;
@@ -87,8 +77,8 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: var(--white);
-    box-shadow: var(--box-shadow);
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +90,7 @@ section {
 .header .logo {
     font-size: 2.5rem;
     font-weight: bolder;
-    color: var(--black);
+    color:#1c2137;
 }
 a{
     text-decoration: none;
@@ -117,12 +107,12 @@ a{
 
 .header .navbar a {
     font-size: 1.7rem;
-    color: var(--black);
+    color: #1c2137;
     margin: 0 1rem;
 }
 
 .header .navbar a:hover {
-    color: var(--primary-color);
+    color:  rgb(175, 44, 175);
 }
 
 .header .icons div {
@@ -132,22 +122,21 @@ a{
 }
 
 .header .icons div:hover {
-    color: var(--primary-color);
+    color:  rgb(175, 44, 175);
 }
 
 #menu-btn {
     display: none;
 }
 
-/* shopping-cart */
 
 .header .shopping-cart {
     position: absolute;
     top: 115%;
     right: -105%;
-    background: var(--white);
+    background: white;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     width: 35rem;
     padding: 2rem;
 }
@@ -171,12 +160,12 @@ a{
     right: 2rem;
     transform: translateY(-50%);
     font-size: 2rem;
-    color: var(--primary-color);
+    color: rgb(175, 44, 175);
     cursor: pointer;
 }
 
 .header .shopping-cart .box .fa-times:hover {
-    color: var(--secondary);
+    color: #e9a93a;
 }
 
 .header .shopping-cart .box img {
@@ -186,26 +175,26 @@ a{
 .header .shopping-cart .box .content h3 {
     font-size: 1.7rem;
     padding-bottom: .5rem;
-    color: var(--black);
+    color: #1c2137;
 }
 
 .header .shopping-cart .box .content h3:hover {
-    color: var(--secondary);
+    color: #e9a93a;
 }
 
 .header .shopping-cart .box .content .price {
     font-size: 1.5rem;
-    color: var(--black);
+    color: #1c2137;
 }
 
 .header .shopping-cart .total {
-    color: var(--black);
+    color: #1c2137;
     font-size: 2.2rem;
     text-align: center;
 }
 
 .header .shopping-cart .total span {
-    color: var(--black);
+    color: #1c2137;
     font-weight: lighter;
 }
 
@@ -214,17 +203,15 @@ a{
     width: 100%;
 }
 
-/* end */
 
-/* login form */
 
 .header .login-form {
     position: absolute;
     top: 115%;
     right: -105%;
-    background: var(--white);
+    background: white;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     width: 35rem;
     padding: 2rem;
 }
@@ -235,9 +222,8 @@ a{
 }
 
 .header .login-form h3 {
-    color: var(--black);
+    color: #1c2137;
     font-size: 2.2rem;
-    text-transform: uppercase;
     text-align: center;
     margin-bottom: .7rem;
 }
@@ -247,7 +233,7 @@ a{
     border: .1rem solid rgba(0, 0, 0, 0.1);
     padding: 1rem 1.2rem;
     font-size: 1.5rem;
-    color: var(--black);
+    color: #1c2137;
     text-transform: capitalize;
     width: 100%;
 }
@@ -261,7 +247,7 @@ a{
 
 .header .login-form .remember label {
     font-size: 1.5rem;
-    color: var(--black);
+    color: #1c2137;
     cursor: pointer;
 }
 
@@ -271,9 +257,7 @@ a{
     width: 100%;
 }
 
-/* end */
 
-/* footer */
 
 .footer {
     background: rgb(252, 227, 252);
@@ -289,14 +273,14 @@ a{
 .footer .box-container .box h3 {
     font-size: 2.2rem;
     text-transform: capitalize;
-    color: var(--primary-color);
+    color:  rgb(175, 44, 175);
     padding: 1rem 0;
 }
 
 .footer .box-container .box p {
     font-size: 1.5rem;
     line-height: 2;
-    color: var(--black);
+    color: #1c2137;
     padding: 1rem 0;
 }
 
@@ -310,26 +294,26 @@ a{
     line-height: 4.5rem;
     border-radius: 10%;
     font-size: 1.7rem;
-    background: var(--primary-color);
-    color: var(--white);
+    background:  rgb(175, 44, 175);
+    color: white;
     margin-right: .3rem;
     text-align: center;
 }
 
 .footer .box-container .box .share a:hover {
-    background: var(--secondary);
+    background: #e9a93a;
 }
 
 .footer .box-container .box .link {
     font-size: 1.7rem;
     line-height: 2;
-    color: var(--primary-color);
+    color:  rgb(175, 44, 175);
     padding: .5rem 0;
     display: block;
 }
 
 .footer .box-container .box .link:hover {
-    color: var(--secondary);
+    color:#e9a93a;
 }
 
 .footer .credit {
@@ -338,15 +322,14 @@ a{
     padding-top: 3rem;
     font-size: 2rem;
     text-transform: capitalize;
-    color: var(--primary-color);
-    border-top: .1rem solid var(--black);
+    color:  rgb(175, 44, 175);
+    border-top: .1rem solid #1c2137;
 }
 
 .footer .credit span {
-    color: var(--secondary);
+    color: #e9a93a;
 }
 
-/* products */
 
 .product .box-container{
     display: grid;
@@ -356,9 +339,9 @@ a{
   
   .product .box-container .box{
     text-align: center;
-    background: var(--white);
+    background:white;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
   }
@@ -382,7 +365,7 @@ a{
   }
   
   .product .box-container .box .content h3{
-    color: var(--black);
+    color: #1c2137;
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -390,7 +373,7 @@ a{
   .product .box-container .box .content .price{
     display: inline-block;
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color:  rgb(175, 44, 175);
   }
   
   .product .box-container .box .content .stars{
@@ -399,7 +382,7 @@ a{
   
   .product .box-container .box .content .stars i{
     font-size: 1.7rem;
-    color: var(--secondary);
+    color: #e9a93a;
   }
   
   .product .box-container .box .content .fa-shopping-cart,
@@ -413,21 +396,20 @@ a{
     background: none;
     cursor: pointer;
     font-size: 2rem;
-    color: var(--primary-color);
-    border: .1rem solid var(--primary-color);
+    color:  rgb(175, 44, 175);
+    border: .1rem solid  rgb(175, 44, 175);
     margin-left: .5rem;
   }
   
   .product .box-container .box .content .fa-shopping-cart:hover,
   .product .box-container .box .content .fa-heart:hover,
   .product .box-container .box .content .fa-eye:hover{
-    color: var(--white);
-    background: var(--primary-color);
-    box-shadow: var(--box-shadow);
+    color: white;
+    background:  rgb(175, 44, 175);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
     transition: .4s linear;
   }
   
-  /* end */
   .carousel-item {
     height: 500px;
 }
@@ -443,7 +425,6 @@ a{
 
 
 
-/* contact */
 
 .contact .row{
     display: flex;
@@ -479,19 +460,18 @@ a{
     margin: 1rem 0;
     font-size: 1.7rem;
     color: #666;
-    text-transform: capitalize;
     border: .1rem solid transparent;
-    background: var(--bg);
-    border-bottom-color: var(--primary-color);
+    background: #e2f9ee;
+    border-bottom-color:  rgb(175, 44, 175);
     border-radius: .5rem .5rem 0 0;
     width: 49%;
   }
   
   .contact .row form .inputBox input:focus,
   .contact .row form textarea:focus{
-    border-top-color: var(--primary-color);
-    border-right-color: var(--primary-color);
-    border-left-color: var(--primary-color);
+    border-top-color:  rgb(175, 44, 175);
+    border-right-color:  rgb(175, 44, 175);
+    border-left-color:  rgb(175, 44, 175);
   }
   
   .contact .row form textarea{
@@ -501,7 +481,6 @@ a{
   }
 
   
-  /* end */
   
 .img-fluid{
     height: 300px;
@@ -535,9 +514,9 @@ a{
         top: 110%;
         right: -110%;
         width: 30rem;
-        box-shadow: var(--box-shadow);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
         border-radius: .5rem;
-        background: var(--white);
+        background: white;
     }
 
     .header .navbar.active {
